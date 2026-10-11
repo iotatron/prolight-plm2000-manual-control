@@ -52,7 +52,7 @@ manager on the Pi.  There are a few other library requirements; check
 the 'import' statements in the code.  But they're all common things.
 
 Google Gemini wrote the main hardware interfacing classes
-(QuadratureDecoder and LCDDisplay) and provided an initial sketch of
+(QuadratureDecoder and LiquidCrystalI2C) and provided an initial sketch of
 the main loop.  The motion and button processing logic was written by
 me.
 
