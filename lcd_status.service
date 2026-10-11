@@ -1,0 +1,13 @@
+[Unit]
+Description=LCD Boot and Shutdown Status
+DefaultDependencies=no
+After=local-fs.target network.target time-sync.target
+Before=shutdown.target reboot.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStop=/usr/bin/python3 /home/user/python/lcd_status.py shutdown
+
+[Install]
+WantedBy=multi-user.target

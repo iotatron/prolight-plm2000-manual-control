@@ -1,0 +1,17 @@
+[Unit]
+Description=CNC Pendant Controller Daemon
+After=multi-user.target pigpiod.service
+Requires=pigpiod.service
+
+[Service]
+Type=simple
+User=user
+WorkingDirectory=/home/user
+ExecStart=/usr/bin/python3 /home/user/python/cnc_pendant.py
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
