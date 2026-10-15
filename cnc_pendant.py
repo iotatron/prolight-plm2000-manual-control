@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+#
+# (c) 2026 David C. Myers
+#
+# Distributed under the terms of the MIT License.
+# For details, see the file LICENSE in this distribution.
+
+
 """CNC Pendant Controller for Raspberry Pi 4B
 Implements a manual CNC pendant with a serial USB interface, manual pulse generator (MPG),
 spindle control encoder, axis/unit selection switches, and an I2C 20x4 DRO display."""
@@ -83,6 +90,9 @@ PIN_I2C_SCL = 3 # physical pin 5
 # the appropriate positive limit switch.  These limit
 # switch values are found in the third byte value of the 0x04
 # polling request.
+
+# If your machine is wired correctly, then you would need to swap
+# the values for Y_POSITIVE_LIMIT and Y_NEGATIVE_LIMIT.
 
 X_POSITIVE_LIMIT = 127
 X_NEGATIVE_LIMIT = 191
