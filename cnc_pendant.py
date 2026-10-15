@@ -103,8 +103,8 @@ E_STOP = 64  # of the 1st byte value
 
 # --- MACHINE CONSTANTS ---
 X_TRAVEL = 12.0
-Y_TRAVEL = 5.5
-Z_TRAVEL = 5.0
+Y_TRAVEL = 6.0
+Z_TRAVEL = 9.0
 
 
 # --- MATH CONSTANTS
